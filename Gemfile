@@ -36,6 +36,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # For API consumption
 gem 'faraday'
+gem 'graphql'
+gem 'graphql-client'
+gem 'graphlient'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -46,6 +49,8 @@ group :development, :test do
   gem 'orderly'
   gem 'rspec-rails', '~> 4.0.1'
   gem 'shoulda-matchers'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :development do
