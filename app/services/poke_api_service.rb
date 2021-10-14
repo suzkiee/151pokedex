@@ -6,7 +6,7 @@ class PokeApiService
       'content-type' => 'application/json'
     }
     )
-    
+
     response = client.query do 
       query do 
         pokemon_v2_pokemon(limit: 151) do 
@@ -32,6 +32,5 @@ class PokeApiService
     end
 
     json = JSON.parse(response.original_hash.to_json, symbolize_names: true)
-
   end
 end
