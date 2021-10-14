@@ -1,6 +1,7 @@
 <html>
 	<body>
 		<h1>Pokemon - Generation 1 </h1>
+    <button><%= link_to "Sort Alphabetically", "/pokedex?alphabetical=true", method: :get %></button>
 		<ol>
       <% @pokemon.each do |pokemon|%>
        	<li><%= pokemon.name %></li>
