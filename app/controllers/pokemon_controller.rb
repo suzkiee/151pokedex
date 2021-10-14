@@ -1,5 +1,9 @@
 class PokemonController < ApplicationController
-  def index 
-    @pokemon = Pokemon.all
+  def index
+    if params[:alphabetical] == "true"
+      @pokemon = Pokemon.alphabetical
+    else
+      @pokemon = Pokemon.all
+    end
   end
 end
